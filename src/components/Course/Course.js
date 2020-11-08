@@ -4,10 +4,17 @@ import { useState } from 'react'
 import './Course.css'
 import Product from '../Product/Product'
 
+
 const Course = () => {
     const AllData = fakeDate.slice(0,10);
     const [products, setProducts] = useState(AllData);
+    const [cart,setCart] = useState([]);
   
+    const handleAddProducts = () => {
+        console.log('product',products);
+        const newCart = [...cart,products];
+        setCart(newCart);
+    }
 
     return (
         
@@ -15,12 +22,15 @@ const Course = () => {
             <div className="course-container">
             
                 {
-                    products.map(product => <Product product={product.name}></Product>)
+                    products.map(product => <Product
+                    handleAddProducts={handleAddProducts}
+                         product={product}></Product>)
                 }
             
             </div>
             <div className="cart-container">
-                <h1>this is cart content</h1>
+                <h1>This is cart</h1>
+                <h5>Order Summary :{cart.length} </h5>
             </div>
             
         </div>

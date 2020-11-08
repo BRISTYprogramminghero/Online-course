@@ -1,0 +1,20 @@
+.pd{
+    display: flex;
+    border-bottom:  1px solid lightgrey;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 15px;
+
+}
+.writing h3{
+    color: darkslategrey;
+
+}
+.main-btn{
+    background-color: rgb(255, 187, 0);
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+}
