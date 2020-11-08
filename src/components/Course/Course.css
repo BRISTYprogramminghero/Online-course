@@ -1,0 +1,11 @@
+.body-area{
+    display: flex;
+}
+.course-container{
+    background-color: rgb(233, 247, 252);
+    width: 70%;
+    margin-left: 20px;
+    margin: 5px;
+    border-right:  1px solid ;
+
+}
